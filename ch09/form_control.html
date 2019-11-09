@@ -113,7 +113,72 @@ Rockabilly</li>
         <option>New Order</option>
         </select>
         </p>
-        
+        <p>What 80s bands did you listen to?
+            <select name="EightiesBands" size="6" multiple>
+            <option>The Cure</option>
+            <option>Cocteau Twins</option>
+            <option selected>Tears for Fears</option>
+            <option selected>Thompson Twins</option>
+            <option value="EBTG">Everything But the Girl</option>
+            <option>Depeche Mode</option>
+            <option>The Smiths</option>
+            <option>New Order</option>
+            </select>
+            </p>
+    <hr>
+
+    <select name="icecream" size="7" multiple>
+        <optgroup label="traditional">
+        <option selected>vanilla</option>
+        <option>chocolate</option>
+        </optgroup>
+        <optgroup label="fancy">
+        <option seleted>Super praline</option>
+        <option>Nut surprise</option>
+        <option>Candy corn</option>
+        </optgroup>
+        </select>
+<hr>
+
+<select name="pizzas" size="3" multiple>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+  </select>
+
+</form>
+
+<hr>
+
+<form action="/client.php" method="POST" enctype="multipart/form-data" >
+    <label>Send a photo to be used as your online icon <em>(optional)
+    </em><br>
+    <input type="file" name="photo" multiple accept="video"></label>
+
+    <input type="hidden" name="success-link" value="http://www.example.com/
+thankyou.html">
+<br>
+
+<input type="date" name="name" value="2017-01-14">
+
+<br>
+
+<input type="time" name="name" value="03:13:00">
+
+<br>
+
+<input type="datetime-local" name="name" value="2017-01-14T03:13:00">
+
+<br>
+
+<input type="month" name="name" value="2017-01">
+<br>
+
+<input type="week" name="name" value="2017-W2">
+
     </form>
 
 </body>
