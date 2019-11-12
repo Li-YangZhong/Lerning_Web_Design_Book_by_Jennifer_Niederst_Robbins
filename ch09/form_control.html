@@ -16,9 +16,9 @@
         <hr>
 
         <input type="text" value="some text" size="">
-        <input type="text" value="some text" size="20">
+        <input type="text" value="some text" size="20" >
         <input type="text" value="some text" size="10">
-        <input type="text" value="some text" size="5">
+        <input type="text" value="some text" size="5" disabled>
         <hr>
 
         <p>Official contest entry:<br>
@@ -30,7 +30,7 @@
         <hr>
 
         <li><label for="form-pswd">Password:</label><br>
-            <input type="password" name="pswd" maxlength="12" id="form-pswd"></li>
+            <input type="password" name="pswd" maxlength="12" id="form-pswd" autofocus></li>
         <hr>
         <input type="search">
         Search field <br>
@@ -208,7 +208,7 @@ thankyou.html">
 
         <br>
 
-        Percent downloaded: <progress max="100" id="fave">0</progress>
+        Percent downloaded: <progress max="100" id="fave" value="60">0</progress>
 
         <br>
 
@@ -274,7 +274,7 @@ thankyou.html">
                     </label></li>
             </ul>
         </fieldset>
-        <fieldset>
+        <fieldset disabled>
             <legend>Customer Information</legend>
             <ul>
                 <li><label>Full name: <input type="text" name="fullname"></label>
@@ -284,6 +284,9 @@ thankyou.html">
             </ul>
         </fieldset>
 
+    <br>
+
+    <button menu="This is a button" type="button">A Button</button>
     </form>
 </body>
 
