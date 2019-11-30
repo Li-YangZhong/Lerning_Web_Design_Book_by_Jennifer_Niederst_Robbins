@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Black Goose Bistro Summer Menu</title>
-    <link href="http://fonts.googleapis.com/css?family=Marko+One" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Marko+One|Lora" rel="stylesheet">
     <style>
         body {
             font-family: Verdana, sans-serif;
@@ -34,6 +34,8 @@
             font-size: 2.0em;
             /* When you specify
 font-size in ems, it will be relative to the inherited size for that element. */
+
+            
         }
 
         @font-face {
@@ -44,6 +46,17 @@ font-size in ems, it will be relative to the inherited size for that element. */
             font-stretch: 1% 500%;
             /* Required by Chrome */
         }
+
+        /* child selector */
+
+        p > em {font-weight: bold;}
+
+        /* Next-sibling selector */
+        h3 + p {font-style: italic;}
+        /* Subsequent-sibling selectors */
+        h3 ~ p {color: pink;}
+
+
     </style>
 </head>
 
@@ -164,6 +177,44 @@ font-size in ems, it will be relative to the inherited size for that element. */
         <span style="font-stretch: ultra-expanded">FONT STRETCH font stretch: ultra-expanded</span>
         <br>
     </p>
+
+
+    <p>Line Height NOT SET/ Line Height NOT SET/Line Height NOT SET/Line Height NOT SET/Line Height NOT SET/Line Height NOT SET/Line Height NOT SET/Line Height NOT SET/</p>
+
+    <p style="font: 2em/2 Verdana;">Line Height Set to 2/Line Height Set to 2/Line Height Set to 2/Line Height Set to 2/Line Height Set to 2/Line Height Set to 2/Line Height Set to 2/Line Height Set to 2/Line Height Set to 2/Line Height Set to 2/</p>
+
+    <p>
+        <span style="font: caption">System Font Keywords: caption</span> <br>
+        <span style="font: icon">System Font Keywords: icon</span> <br>
+        <span style="font: menu">System Font Keywords: menu</span> <br>
+        <span style="font: message-box">System Font Keywords: message-box</span> <br>
+        <span style="font: small-caption">System Font Keywords: small-caption</span> <br>
+        <span style="font: status-bar">System Font Keywords: status-bar</span> <br>
+    </p>
+
+    <p style="font-variant-ligatures: normal; font-family: Lora;">font family is Google Font Lora; font-variant-ligatures set to normal; fiction fiction fiction fiction</p>
+
+    <p style="font-variant-caps: all-small-caps; font-family: Lora;">style="font-variant-caps: all-smallcaps; font-family: Lora;"</p>
+   <p>   Some other text. <span style="font-variant-position: sup; font-family: Lora;">font-variant-position: sup</span>  <span style="font-variant-position: sub; font-family: Lora;">font-variant-position: sub</span> </p> 
+
+   <p style="border-style: dashed; border-width: 4px 2px; color: purple">For the sake of accuracy, I want to point out that the color property is not
+    strictly a text-related property. In fact, according to the CSS specification, it
+    is used to change the foreground (as opposed to the background) color of an
+    element. <strong>The foreground of an element consists of both the text it contains as
+    well as its border.</strong> So, when you apply a color to an element (including image
+    elements), know that color will be used for the border as well, unless there
+    is a specific border-color property that overrides it.</p>
+
+    <p>A child selector is similar to a descendant selector, but it targets only the direct
+        children of a given element. There may be no other hierarchical levels in between.
+        They are indicated with the greater-than symbol (>). The following rule affects
+        <em>emphasized text</em>, but only when it is directly contained in a p element. <a href="#">An <em>em element</em> inside a link (a) within the paragraph would not be affected</a> .</p>
+
+    <h3>H3 element</h3>
+    <p>first paragraph after h3 element</p>
+    <p>second paragraph after h3 element</p>
+
+
 </body>
 
 </html>
