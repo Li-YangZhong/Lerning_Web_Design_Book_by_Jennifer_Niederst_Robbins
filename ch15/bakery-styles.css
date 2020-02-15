@@ -88,6 +88,10 @@ p.more {
   font-size: .8em;
 }
 
+main img {
+  float: left;
+}
+
 /* aside "hours" styles */
 aside {
   background: url(images/scallop.png) repeat-y left top;
