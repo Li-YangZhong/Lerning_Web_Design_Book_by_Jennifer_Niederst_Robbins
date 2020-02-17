@@ -124,7 +124,8 @@ footer {
   padding: 1em;
 }
 #award { 	
-  position: absolute; 	
+  /* position: absolute; 	 */
+  position: fixed;
   top: 30px; 	
   left: 50px;
 }
